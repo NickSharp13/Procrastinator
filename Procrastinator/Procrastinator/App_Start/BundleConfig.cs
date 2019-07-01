@@ -9,15 +9,14 @@ namespace Procrastinator
         public static void RegisterBundles(BundleCollection bundles)
         {
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
+                       "~/Scripts/jquery-3.4.1.js"));
+
+            bundles.Add(new ScriptBundle("~/bundles/jsstuff").Include(
                         "~/Scripts/jquery.isotope.min.js",
                         "~/Scripts/wow.min.js",
                         "~/Scripts/animate.js",
                         "~/Scripts/functions.js",
-                        "~/Scripts/fancybox/jquery.fancybox.pack.js",
-                        "~/Scripts/jquery-{version}.js"));
-
-            bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
-                        "~/Scripts/jquery.validate*"));
+                        "~/Scripts/fancybox/jquery.fancybox.pack.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
                         "~/Scripts/modernizr-*"));
@@ -26,15 +25,10 @@ namespace Procrastinator
                         "~/Scripts/bootstrap.min.js",
                         "~/Scripts/bootstrap.js"));
 
-            bundles.Add(new ScriptBundle("~/bundles/fonts").Include(
-                        "~/fonts/font-awesome-webfont.woff"));
-
             bundles.Add(new StyleBundle("~/Content/css").Include(
-                        "~/Content/bootstrap.css",
-                        "~/Content/font-awesome.css",
-                        "~/Content/font-awesome.min.css",
-                        "~/Content/isotope.css",
                         "~/Content/bootstrap.min.css",
+                        "~/Content/font-awesome.min.css",
+                        "~/Content/isotope.css",                      
                         "~/Scripts/fancybox/jquery.fancybox.css",
                         "~/Content/style.css"));
         }
