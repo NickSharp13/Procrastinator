@@ -11,6 +11,7 @@ namespace Procrastinator
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
                         "~/Scripts/jquery.isotope.min.js",
                         "~/Scripts/wow.min.js",
+                        "~/Scripts/animate.js",
                         "~/Scripts/functions.js",
                         "~/Scripts/fancybox/jquery.fancybox.pack.js",
                         "~/Scripts/jquery-{version}.js"));
@@ -24,6 +25,9 @@ namespace Procrastinator
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
                         "~/Scripts/bootstrap.min.js",
                         "~/Scripts/bootstrap.js"));
+
+            bundles.Add(new ScriptBundle("~/bundles/fonts").Include(
+                        "~/fonts/font-awesome-webfont.woff"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                         "~/Content/bootstrap.css",
